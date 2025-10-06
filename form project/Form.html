@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width+-=device-width, initial-scale=1.0"
+    </meta>
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon"
+ href="keyboard.ico">
+ <h1><u>Really Cool Event</u></h1> 
+    </head>
+    <br>
+    <form>
+     <body>
+    <form action="/register" method="post"
+    <fieldset>
+        <label>
+            First Name:
+            <input type="text" placeholder="Enter Name" maxlength="50" required>
+  <br>   
+  <br>      
+            Last Name:
+            <input type="text" placeholder="Enter Last Name" maxlength="50" required>
+        </label>
+        <br>
+        <br>
+        <label>
+            Email:
+            <input type="text" placeholder="john.email@email.com" required>
+        </label>
+        <label>
+            Phone:
+            <input type="tel" pattern="[0-9]{3}[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}" placeholder="123-456-7890">
+        </label>
+        <br>
+        <br>
+        <br>
+         <legend>Which of these prizes would you be interested in playing for?</legend>
+    </fieldset>
+    <br>
+    <label>
+        <input type="checkbox"
+        name="Prize" value="A lot of money">
+        A lot of money
+    </label>
+    <label>
+        <input type="checkbox" name="Prize" value="Another a lot of money">
+        Another a lot of money
+    </label>
+    <label>
+        <input type="checkbox" name="Prize" value="New Car">
+        New Car
+    </label>
+    <label>
+        <input type="checkbox" name="Contact" value="New House">
+        New House 
+<br>
+<br>
+<br>
+<label></label>
+    </label>
+        <legend>Would you like to attend this event?</legend>
+        <br>
+        <label>
+            <input type="radio"
+            name="Answer" value="Yeah">
+            Yeah
+        </label>
+        <label>
+            <input type="radio"
+            name="Answer" value="Umm I guess">
+            Umm I guess
+        </label>
+        <label>
+            <input type="radio"
+            name="Answer" value="Not really to be honest">
+            Not really to be honest
+        </label>
+        <label>
+            <input type="radio"
+            name="Answer" value="Dear god no I do not want to attend">
+            Dear god no I do not want to attend
+        </label>
+        <label>
+            <input type="radio"
+            name="Answer" value="You know what? On second thought maybe I woiuld like to attend">
+            You know what? On second thought maybe I would like to attend
+        </label>
+        </label>
+        <br>
+        <br>
+        <legend>How stoked are you for this event? (choose one)</legend>
+        <label>
+            <input type="radio" required
+            name="reply" value="Very super stoked">
+            Very super stoked
+        </label>
+        </label>
+        <br>
+        <br>
+        <br>
+        <form action="/upload-image" method="POST"
+enctype="multipart/form-data">
+ <fieldset>
+ <legend>Upload Image to prove you are real and cool</legend>
+ <label>
+Profile Picture:
+<input type="file" name="profile_picture"
+ accept="image/jpeg,image/png,image/gif"
+ required>
+ </label>
+ <small>Max file size: 5MB. Accepted formats: JPG, PNG,
+GIF</small>
+ </fieldset>
+ <br>
+ <label>
+    <input type="submit"
+    name=""
+ </label>
+     <label>
+        <input type="reset"
+        name="answer" value="Clear"
+        clear>
+    </label> 
+    </body>
+    </form>
